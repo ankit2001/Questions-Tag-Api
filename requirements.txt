@@ -1,0 +1,10 @@
+django
+restframework
+numpy
+pandas 
+sklearn
+nltk
+scipy
+re
+tqdm
+matplotlib
