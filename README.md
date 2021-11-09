@@ -50,15 +50,4 @@ Use mod header extension in browser and put token there to give excess to token.
 Form will require Text Field.<br>
 It will give a json response of Text report in key "report".</p>
 
-## ImagReport Api
-<p>Post request to following url: <br>
-<b>127.0.0.1:8000/api/image-report</b> <br>
-Form will require Image Field.<br>
-It will give a json response of Image report in key "report".</p>
-
-## VideoReport Api
-<p>Post request to following url: <br>
-<b>127.0.0.1:8000/api/video-report</b> <br>
-Form will require Video Field.<br>
-It will give a json response of Video report in key "report".</p>
 
