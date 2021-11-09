@@ -1,0 +1,52 @@
+# When total users are 1000 and concurrency is 100
+
+Server Software:        WSGIServer/0.2
+Server Hostname:        54.197.95.62
+Server Port:            8000
+
+Document Path:          /api/developer-accessToken/
+Document Length:        40 bytes
+
+Concurrency Level:      100
+Time taken for tests:   14.407 seconds
+Complete requests:      1000
+Failed requests:        0
+Non-2xx responses:      1000
+Total transferred:      276000 bytes
+HTML transferred:       40000 bytes
+Requests per second:    69.41 [#/sec] (mean)
+Time per request:       1440.665 [ms] (mean)
+Time per request:       14.407 [ms] (mean, across all concurrent requests)
+Transfer rate:          18.71 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      230  248  89.0    244    2601
+Processing:   231  351 554.5    249   12518
+Waiting:      231  330 339.2    248    7004
+Total:        462  599 624.5    494   13907
+
+Percentage of the requests served within a certain time (ms)
+  50%    494
+  66%    500
+  75%    507
+  80%    515
+  90%    548
+  95%   1068
+  98%   1574
+  99%   1647
+ 100%  13907 (longest request)
+
+
+# When total users are 10000 and concurreny is 1000
+
+Benchmarking 54.197.95.62 (be patient)
+Completed 1000 requests
+Completed 2000 requests
+
+Test aborted after 10 failures
+
+apr_socket_connect(): Operation already in progress (37)
+Total of 2190 requests completed
+
+Means memory dump after 2190 on server requests

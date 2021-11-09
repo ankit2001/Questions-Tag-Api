@@ -1,0 +1,12 @@
+django==2.2.13
+djangorestframework==3.9.2
+matplotlib==3.2.2
+sklearn==0.0
+nltk==3.5
+pandas==1.0.5
+django-json-field==0.5.7
+jsonfield==3.1.0
+pillow==7.2.0
+imutils==0.5.3
+requests==2.24.0
+argparse==1.4.0

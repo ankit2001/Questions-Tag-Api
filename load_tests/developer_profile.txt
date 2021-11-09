@@ -1,0 +1,98 @@
+# When total users are 100 and concurrent users are 10 means 10 time 10 concurrent users
+
+Server Software:        WSGIServer/0.2
+Server Hostname:        54.197.95.62
+Server Port:            8000
+
+Document Path:          /api/developer-profile/
+Document Length:        63 bytes
+
+Concurrency Level:      10
+Time taken for tests:   5.704 seconds
+Complete requests:      100
+Failed requests:        0
+Non-2xx responses:      100
+Total transferred:      29500 bytes
+Total body sent:        25700
+HTML transferred:       6300 bytes
+Requests per second:    17.53 [#/sec] (mean)
+Time per request:       570.421 [ms] (mean)
+Time per request:       57.042 [ms] (mean, across all concurrent requests)
+Transfer rate:          5.05 [Kbytes/sec] received
+                        4.40 kb/s sent
+                        9.45 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      230  245   8.1    243     275
+Processing:   235  261  36.5    249     399
+Waiting:      235  261  36.5    249     399
+Total:        465  506  38.2    493     644
+
+Percentage of the requests served within a certain time (ms)
+  50%    493
+  66%    505
+  75%    512
+  80%    517
+  90%    531
+  95%    627
+  98%    642
+  99%    644
+ 100%    644 (longest request)
+
+
+# When total users are 1000 and concurrent users are 100
+
+Server Hostname:        54.197.95.62
+Server Port:            8000
+
+Document Path:          /api/developer-profile/
+Document Length:        63 bytes
+
+Concurrency Level:      100
+Time taken for tests:   10.359 seconds
+Complete requests:      1000
+Failed requests:        0
+Non-2xx responses:      1000
+Total transferred:      295000 bytes
+Total body sent:        257000
+HTML transferred:       63000 bytes
+Requests per second:    96.54 [#/sec] (mean)
+Time per request:       1035.876 [ms] (mean)
+Time per request:       10.359 [ms] (mean, across all concurrent requests)
+Transfer rate:          27.81 [Kbytes/sec] received
+                        24.23 kb/s sent
+                        52.04 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      229  287 235.9    245    1843
+Processing:   233  491 603.1    290    3752
+Waiting:      233  478 585.7    283    3750
+Total:        468  779 641.8    540    4862
+
+Percentage of the requests served within a certain time (ms)
+  50%    540
+  66%    576
+  75%    665
+  80%    704
+  90%   1586
+  95%   2159
+  98%   3896
+  99%   3992
+ 100%   4862 (longest request)
+Working fine here
+
+
+# Failing on limit case when total users are 10000 and 500 users are concurrent
+
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 54.197.95.62 (be patient)
+
+Test aborted after 10 failures
+
+apr_socket_connect(): Operation already in progress (37)
+

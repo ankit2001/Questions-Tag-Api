@@ -1,0 +1,84 @@
+# When total users are 10 and all are simultaneously
+
+Server Software:        WSGIServer/0.2
+Server Hostname:        54.197.95.62
+Server Port:            8000
+
+Document Path:          /api/text-report/
+Document Length:        158 bytes
+
+Concurrency Level:      10
+Time taken for tests:   21.907 seconds
+Complete requests:      10
+Failed requests:        0
+Total transferred:      3820 bytes
+Total body sent:        2780
+HTML transferred:       1580 bytes
+Requests per second:    0.46 [#/sec] (mean)
+Time per request:       21906.754 [ms] (mean)
+Time per request:       2190.675 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.17 [Kbytes/sec] received
+                        0.12 kb/s sent
+                        0.29 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      247  250   1.2    251     251
+Processing:  2282 17424 5320.3  19108   19127
+Waiting:     2281 17420 5319.4  19105   19126
+Total:       2529 17674 5321.5  19360   19378
+
+Percentage of the requests served within a certain time (ms)
+  50%  19360
+  66%  19364
+  75%  19369
+  80%  19370
+  90%  19378
+  95%  19378
+  98%  19378
+  99%  19378
+ 100%  19378 (longest request)
+
+
+ # Connection is working fine upto 400 requests and 200 are concurrent
+
+ Server Software:        WSGIServer/0.2
+Server Hostname:        54.197.95.62
+Server Port:            8000
+
+Document Path:          /api/text-report/
+Document Length:        0 bytes
+
+Concurrency Level:      200
+Time taken for tests:   307.581 seconds
+Complete requests:      400
+Failed requests:        399
+   (Connect: 0, Receive: 276, Length: 123, Exceptions: 0)
+Non-2xx responses:      1
+Total transferred:      66296 bytes
+Total body sent:        111200
+HTML transferred:       38523 bytes
+Requests per second:    1.30 [#/sec] (mean)
+Time per request:       153790.718 [ms] (mean)
+Time per request:       768.954 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.21 [Kbytes/sec] received
+                        0.35 kb/s sent
+                        0.56 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      230  814 809.6    262    5148
+Processing:   430 112531 92346.6  58715  289260
+Waiting:        0 70131 108158.2      0  289193
+Total:       2865 113345 92246.2  59784  289507
+
+Percentage of the requests served within a certain time (ms)
+  50%  59784
+  66%  66989
+  75%  178488
+  80%  231277
+  90%  289197
+  95%  289393
+  98%  289445
+  99%  289490
+ 100%  289507 (longest request)
