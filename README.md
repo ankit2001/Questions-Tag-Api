@@ -1,6 +1,6 @@
 # Media Scanner
 ## Environment setup:
-<p>git clone https://github.com/punditji-live/app.git <br>
+<p>git clone https://github.com/ankit2001/Questions-Tag-Api.git <br>
 cd app <br>
 sudo apt install python3 python3-pip or brew install python3 python3-pip<br> 
 python3 -m venv ~/env <br>
@@ -8,7 +8,7 @@ source ~/env/bin/activate <br>
 sudo -H pip install -r requirements.txt</p>
 
 ## Building using docker:
-<p>git clone https://github.com/punditji-live/app.git <br>
+<p>git clone https://github.com/ankit2001/Questions-Tag-Api.git <br>
 cd app <br>
 sudo docker-compose build<br>
 sudo docker-compose run MediaScanner sh -c "python3 manage.py makemigrations"<br>
